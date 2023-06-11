@@ -53,6 +53,7 @@ a{
     max-width: 1100px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 .flex{
     display: flex;
@@ -105,6 +106,7 @@ a{
 .main-nav{
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 .company-logo img{
     width: 200px;
@@ -116,6 +118,9 @@ a{
     justify-content: end;
     gap: 40px;
 }
+.nav-toggle{
+    display: none;
+}
 
 /* header section */
 header{
@@ -126,7 +131,7 @@ header{
     gap:50px;
 }
 .header-right img{
-    width: 600px;
+    width: 100%;
 }
 
 .header-left{
@@ -146,9 +151,11 @@ header{
     color: var(--primary-text-color);
 }
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap:20px;
 }
+
 .logo{
     height: 46px;
 } 
@@ -170,7 +177,8 @@ margin-bottom: 20px;
 }
 .features-area{
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 }
 .features-card{
     flex-direction: column;
@@ -202,6 +210,7 @@ margin-bottom: 20px;
 .examples-area{
  justify-content: space-between;
  margin-top: 20px;
+ flex-wrap: wrap;
 }
 .examples-card{
     width: 23%;
@@ -304,6 +313,7 @@ footer{
 .socials{
     justify-content: space-between;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .socials i{
     font-size: 30px;

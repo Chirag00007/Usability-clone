@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Usability Hub</title>
 </head>
 
@@ -26,7 +27,7 @@
             <a class="company-logo" href="#">
                 <img src="asset 1.png" alt="Usability Hub Logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks" >
                 <ul class="flex">
                     <li><a href="#" class="hover-links">Products</a></li>
                     <li><a href="#" class="hover-links">Customers</a></li>
@@ -36,6 +37,9 @@
                     <li><a href="#" class="hover-links primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href=" " class="nav-toggle hoverlink" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
 
         </div>
     </nav>
@@ -134,7 +138,7 @@
     </section>
 
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container rs1">
             <div class="feature-img">
                 <img src="asset 18.png" alt="" srcset="">
             </div>
@@ -148,7 +152,7 @@
         </div>
     </section>
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container rs2">
             <div class="feature-desc flex">
                 <h4>Optimisation for</h4>
                 <h3>Marketers</h3>
@@ -164,7 +168,7 @@
 
     </section>
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container rs3">
             <div class="feature-img">
                 <img src="asset 24.png" alt="" srcset="">
             </div>
@@ -260,6 +264,7 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/0fd401c31e.js" crossorigin="anonymous"></script>
+    <script src="nav.js"></script>
 </body>
 
 </html>
